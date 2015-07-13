@@ -8,7 +8,9 @@ body {
 font: 13.5px Arial, Helvetica, Verdana, Calibri, sans-serif; /* Palatino Linotype Trebuchet MS, */
 margin: 0;
 padding: 1em;
-min-width: 680px; /* Force horizontal scrollbar*/
+min-width: 680px;
+max-width: 880px; /* Force horizontal scrollbar*/
+align: center;
 }
 .clear {
 clear: both;
@@ -48,15 +50,17 @@ width: 4em;
 background-color: #ffffff; /*white*/
 color: #000000; /*black*/
 width: 100%;
-padding: 0 0 0 0;
-text-align: center;
+padding: 0 100px 0 0;
+margin: 0 100px 0 0;
+text-align: left;
+height: 110px;
 } 
 #header h1 {
 text-align: left;
 color: #b7b1ff; /*Colour of non-hyperlinking text in title banner; is currently light blue*/
 background-color: #ffffff; /*Background colour of title banner, currently white; 333333 is the dark ENS grey*/
 margin: 0;
-padding: 5px 80px 0px 220px; /*separation from: table top, right border, bot border, min left rim */
+padding: 0 20px 10px 20px; /*separation from: table top, right border, bot border, min left rim */
 font-size: 1.5em;
 border: none;
 }
@@ -82,22 +86,21 @@ color: #f81c1c; /*red: colour of <b></b>hyperlink text, hovered*/
 }
 #logoleft { /*ENS logo */
 float: left;
-margin-top: 0px;
-width: 200px;
-height:68px;
+height: 100px;
 border: none;
+padding: 0 20px 10px 20px; /*separation from: table top, right border, bot border, min left rim */
 }
 #logoright {  /*CNRS logo */
 float: right;
 margin-top: 0px;
-width: 68px;
+width: 20%;
 border: none;
 } 
 /* Leftcolumn formating:  vertical menu. Common to all pages. */
 #leftcolumn {
 display: inline;
 float: left;
-width: 180px;
+width: 160px;
 padding: 0;
 margin : 0;
 text-align: center;  
@@ -134,11 +137,11 @@ background-color: transparent;
 } 
 /* Main column. Common to all pages */
 #maincolumn {
-margin-left: 180px;
-width: auto;
-padding: 20px 0 0 0;
+margin-left: 160px;
+max-width: 660px;
+padding: 0 0 0 0;
 color: #000000; /* non-paragraphed standard text is black */
-text-align: center;
+text-align: left;
 }
 #maincolumn ul{ /* main column lists have extra padding  and are left-aligned by default*/
 margin:0.5em 0.5em 0.5em 1.5em; 
@@ -181,7 +184,7 @@ margin: 15px 0 10px 0;
 padding: 0;
 border-bottom: 1px solid #666666;
 color: #0a0099;
-text-align: center;
+text-align: left;
 font-weight: bold;
 font-size: 1.2em;
 }
@@ -193,7 +196,7 @@ color: #0a0099;
 margin: 0.5em 0 3em 0;
 padding: 0;
 border: 0;
-text-align: center;
+text-align: left;
 font-weight: bold;
 font-size: 1.2em;
 }
@@ -209,7 +212,7 @@ color: #f81c1c;
 /* for Attractive links in body, eg to CVs */
 #maincolumn h4 { 
 margin: 0.5em 0 1em 0;
-text-align: center;
+text-align: left;
 font-weight: bold;
 font-size: 1.1em;
 }
