@@ -1,0 +1,268 @@
+@charset "UTF-8";
+/*  Chimie BO Stylesheet OTS 201004*/
+* {margin: 0; padding: 0;}
+html { 
+margin: 0;
+}
+body {
+font: 13.5px Arial, Helvetica, Verdana, Calibri, sans-serif; /* Palatino Linotype Trebuchet MS, */
+margin: 0;
+padding: 1em;
+min-width: 680px; /* Force horizontal scrollbar*/
+}
+.clear {
+clear: both;
+}
+.italic {
+font-style: italic;
+}
+.underline {
+text-decoration: underline;
+}
+.text {
+float: left;
+display: inline;
+}
+.bold {
+font-weight: bold;
+}
+.contact {
+font-weight: bold;
+font-style: italic;
+}
+/* Icon Image class: common to all pages */
+img.icon {
+border: 0.2px solid #777777;
+vertical-align: middle;
+height: 1em;
+width: 2em;
+}
+img.footericon {
+border: none;
+vertical-align: middle;
+height: 2em;
+width: 4em;
+}
+/*Header formating (logos and title) */
+#header {
+background-color: #ffffff; /*white*/
+color: #000000; /*black*/
+width: 100%;
+padding: 0 0 0 0;
+text-align: center;
+} 
+#header h1 {
+text-align: left;
+color: #b7b1ff; /*Colour of non-hyperlinking text in title banner; is currently light blue*/
+background-color: #ffffff; /*Background colour of title banner, currently white; 333333 is the dark ENS grey*/
+margin: 0;
+padding: 5px 80px 0px 220px; /*separation from: table top, right border, bot border, min left rim */
+font-size: 1.5em;
+border: none;
+}
+#header h2 {
+margin: 0;
+padding: 30px 0 10px 50px;
+color: #0a0099; /*Colour of the page name text, currently blue*/
+background-color: #ffffff; /*background to page heading text, currently white*/
+text-align: left;
+font-size: 1.8em;
+font-weight: bold;
+}
+#header a {
+text-decoration: none;
+text-align: left;
+color: #000000;  /*Black: colour of title header hyperlink text, nonselected*/
+border: none;
+}
+#header a:hover {
+text-decoration: none;
+border: none;
+color: #f81c1c; /*red: colour of <b></b>hyperlink text, hovered*/
+}
+#logoleft { /*ENS logo */
+float: left;
+margin-top: 0px;
+width: 200px;
+height:68px;
+border: none;
+}
+#logoright {  /*CNRS logo */
+float: right;
+margin-top: 0px;
+width: 68px;
+border: none;
+} 
+/* Leftcolumn formating:  vertical menu. Common to all pages. */
+#leftcolumn {
+display: inline;
+float: left;
+width: 180px;
+padding: 0;
+margin : 0;
+text-align: center;  
+}
+ul#verticalmenu  {
+border-top: solid 1px #666666;
+border-right: solid 1px #666666;
+padding: 0px;
+margin: 0px;
+text-align: justify;
+width: 90%;
+}
+#verticalmenu li {
+border-bottom: solid 1px #666666;
+list-style-type: none;
+}
+#verticalmenu em, #verticalmenu a:link, #verticalmenu a:visited, #verticalmenu a:hover {
+display: block;
+padding: 7px 0px 7px 8px; /*paddings between menu items*/
+color: #444444; /*other menu options colour */
+font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+text-decoration: none;
+border-left: 20px solid #444444; /* other menu options colour and block */
+}
+#verticalmenu em {
+font-style: italic;
+color: #000000;
+border-left: 40px solid #000000;
+}
+#verticalmenu a:hover {
+border-left: solid 30px #f81c1c; /*hovered menu item*/
+color: #f81c1c;
+background-color: transparent;
+} 
+/* Main column. Common to all pages */
+#maincolumn {
+margin-left: 180px;
+width: auto;
+padding: 20px 0 0 0;
+color: #000000; /* non-paragraphed standard text is black */
+text-align: center;
+}
+#maincolumn ul{ /* main column lists have extra padding  and are left-aligned by default*/
+margin:0.5em 0.5em 0.5em 1.5em; 
+text-align:left
+ }
+#maincolumn ul li {
+margin-top:0.4em; /* list items in main column lists have extra space between lines for readability */
+ }
+#maincolumn p {
+margin: 0 0 10px 0;
+text-align: justify;
+font-size: 1em;	
+color: #000000;
+}
+/* general maincol links*/
+#maincolumn a {
+color: #0a0099;
+text-decoration:underline;
+border: none;
+}
+/*#maincolumn a:visited{
+color: #5a00c9;
+border: none;
+text-decoration: underline;
+}*/ /* To change link colour once it's been clicked*/
+#maincolumn a:hover {
+/*font-weight: bold;*/
+color: #f81c1c;
+}
+#maincolumn h1 {/* Page Main Section Heading with bar, should be black descriptive and no links */
+color: #000;
+text-align: center;
+margin: 20px 0 10px 0; 
+padding: 0;
+border-bottom: 2px solid black;
+font-size: 1.6em
+}
+#maincolumn h2 { /* Page Subheading with bar, Research Topics etc, should not change colour when hovered according to OTS! */
+margin: 15px 0 10px 0;
+padding: 0;
+border-bottom: 1px solid #666666;
+color: #0a0099;
+text-align: center;
+font-weight: bold;
+font-size: 1.2em;
+}
+#maincolumn h2 a:hover , #maincolumn h2 a:link{
+font-weight: bold;
+color: #0a0099;
+}
+#maincolumn h3 { /* PageTop and Bottom Hyperlinks to Jump to Sections, differentiates between linking and non-linking text behaviour */
+margin: 0.5em 0 3em 0;
+padding: 0;
+border: 0;
+text-align: center;
+font-weight: bold;
+font-size: 1.2em;
+}
+#maincolumn h3 a:link	, #maincolumn  h3 a:visited , #maincolumn  h3 a:hover {
+font-size: 1.3em;
+}
+#maincolumn h3 a:link	,#maincolumn  h3 a:visited{
+color: #0a0099;
+}
+#maincolumn  h3 a:hover {
+color: #f81c1c;
+}
+/* for Attractive links in body, eg to CVs */
+#maincolumn h4 { 
+margin: 0.5em 0 1em 0;
+text-align: center;
+font-weight: bold;
+font-size: 1.1em;
+}
+#maincolumn h4 a:link, #maincolumn  h4 a:visited{
+color: #708004; /* gold*/
+}
+#maincolumn  h4 a:hover {
+color: #f81c1c;
+}
+/* To replace the publications list: page publication */
+.journaltitle{ /* Journal title*/
+text-align: left;
+margin: 10px 20px 0 20px;
+font-size: 1.1em;
+font-weight: normal;
+padding: 0;
+color: #000;
+}
+.authors, .publititle, .doi{
+text-align: left;
+margin: 0 20px 0 20px;
+padding: 0;
+font-size: 1em;
+}
+.authors {
+color: #000;
+font-weight: bold;
+}
+.publititle {
+font-style: italic;
+color: #000666;
+}
+.doi  {
+color: #777777;
+}
+/* Footer note formatting */
+#footer {
+clear: both;
+background-color: #fff;
+border: solid 1px #666666;
+margin-top: 10px;
+padding: 6px;
+text-align: center;
+}
+#footer a , #footer a:visited {
+color: #0a0099;
+}
+#footer p {
+color: #000;
+background-color: #ffffff;
+}
+#footer a:hover {
+font-weight: bold;
+color: #f81c1c;
+background-color: #ffffff;
+}
