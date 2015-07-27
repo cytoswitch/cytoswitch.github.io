@@ -21,8 +21,10 @@
 	<h2>Cyto<i>Switch</i> Project</h2>
 </div><!-- End of Header div -->
 
-FRAME
-<iframe name="indexx" src="indexx.php" width="50%" frameborder="0"></iframe>
+FRAME X<br />
+<iframe name="indexx" src="indexx.php" width="50%" frameborder="0"></iframe><br />
+FRAME C<br />
+<iframe name="indexc" src="indexc.php" width="70%" frameborder="0"></iframe><br />
 
 <?php
  if ($handle = opendir('.')) {
