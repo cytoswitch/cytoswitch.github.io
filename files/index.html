@@ -21,20 +21,23 @@
 	<h2>Cyto<i>Switch</i> Project</h2>
 </div><!-- End of Header div -->
 
-<?php
-//Open images directory
-$dir = opendir("images");
+FRAME
+<iframe name="indexx" src="indexx.php" width="50%" frameborder="0"></iframe>
 
-//List files in images directory
-while (($file = readdir($dir)) !== false)
-  {
-   if ($file != "." && $file != "..")
+<?php
+ if ($handle = opendir('.')) {
+   while (false !== ($file = readdir($handle)))
       {
-  echo '<a href="'.$file.'">' . $file . '</a>'."<br />";
+          if ($file != "." && $file != "..")
+      {
+              $thelist .= '<a href="'.$file.'">'.$file.'</a>'.'<br>';
+          }
+       }
+  closedir($handle);
   }
-  }
-  closedir($dir);
 ?>
+<p style="font-weight: bold; font-size: 10pt">List of files:</p>
+<p style="font-weight: bold; font-size: 10pt; color: #560D1C"><?=$thelist?></p>
 
 </body>
 </html>
