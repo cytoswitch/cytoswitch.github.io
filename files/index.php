@@ -1,6 +1,6 @@
  <?php
 //Open images directory
-$dir = opendir("test");
+$dir = opendir("files");
 
 //List files in images directory
 while (($file = readdir($dir)) !== false)
