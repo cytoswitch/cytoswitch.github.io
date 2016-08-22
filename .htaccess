@@ -1,3 +1,7 @@
 Order deny,allow
 ErrorDocument 404 404.html
 DirectoryIndex index.html
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.your-domain\.com
+RewriteRule (.*) http://your-domain.com/$1 [R=301,L]
