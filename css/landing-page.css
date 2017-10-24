@@ -40,13 +40,35 @@ h6 {
     font-weight: 400;
 }
 
+/* Style all font awesome icons */
+.fa-linkedin {
+    background: #007bb6;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+
+.btn-primary.outline {
+    border: 2px solid #0099cc;
+    color: #0099cc;
+    background: none;
+    padding: 12px 22px;
+}
+
 .intro-header {
     padding-top: 20px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 20px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/patagonia.jpg) no-repeat center center;
+    background: url(../img/cells.png) no-repeat center center;
     background-size: cover;
+
 }
 
 .intro-message {
@@ -108,8 +130,7 @@ h6 {
 }
 
 .content-section-b {
-    padding: 50px 0;
-    text-align: center;
+    padding: 50px 0px;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
     background-color: #e7e7e7
@@ -133,7 +154,7 @@ h6 {
 }
 
 .banner {
-    padding: 50px 0;
+    padding: 60px 0;
     color: #f8f8f8;
     background: url(../img/lights.jpg) no-repeat center center;
     background-size: cover;
